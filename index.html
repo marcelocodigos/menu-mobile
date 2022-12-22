@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Menu Mobile Tapilogie</title>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"...>
     <link rel="stylesheet" href="menu-tapilogie.css">
     
@@ -33,7 +34,15 @@
       <ul id="menu">
         <li id="primeiro-item" class="row nav-item"><a  style="width:100%;" href="#">Tapetes Vintage</a></li>
         <li class="row nav-item"><a style="width:100%;" href="#"> Tapetes de Oncinha</a></li>
-        <li class="row nav-item"><a style="width:100%;" style="width:100%; border:1px solid red;" class="row d-flex justify-content-between" href="#"><span class="col-10">Outros</span> <span class="col-1">></span></a></li>
+        <li class="row nav-item" id="sub-menu-item"><a style="width:100%;" style="width:100%; border:1px solid red;" class="row d-flex justify-content-between" href="#"><span class="col-10">Outros</span> <span class="col-1 icone-menu">></span></a>
+          <!--Drop Down Sub-menu-item-->
+          <ul id="sub-menu-items" class="" style="display: none;">
+            <li><a href="#">Tapeçaria de Parede</a></li>
+            <li><a href="#">Almofadas</a></li>
+            <li><a href="#">Móveis em Tapeçaria</a></li>
+            <li><a href="#">Porta-copos</a></li>
+          </ul>
+        </li>
         <li class="row nav-item"><a style="width:100%;" href="#">Sobre nós</a></li>
         <li class="row nav-item"><a style="width:100%;" href="#">Contato</a></li>
         <li class="row nav-item"><a style="width:100%;" href="#">Tapetes Vintage</a></li>
