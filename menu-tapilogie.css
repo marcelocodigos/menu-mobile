@@ -1,0 +1,127 @@
+@import url("fonts.css");
+body,ul{
+    margin: 0;
+    padding:0;
+
+}
+li{
+    list-style:none;
+}
+a{
+    color: black;
+    font-family:"Wremena";
+    line-height: 32px;
+    font-size: 32px;
+    text-decoration: none;
+    padding: 4px;
+}
+a:hover{
+   
+    text-decoration: none;
+   
+}
+#logo{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+
+}
+.icones{
+ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:flex-end;
+   margin:0 8px;
+    
+}
+.header{
+    display: flex;
+    height:100vh;
+}
+#menu{
+ margin:0 4px;
+ display: none;
+}
+#menu ul li{
+    border-top: 1px solid #EDEDED;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding:24px;
+    cursor: pointer;
+
+}
+#menu ul li:hover{
+    background: rgba(0,0,0,.05);
+}
+.container-fluid{
+ margin: 0 !important;;
+ padding: 0 !important;
+}
+.adversing-top{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDEDED;
+    height: 40px;
+    font-family:"Helvetica Now Display",sans-serif;
+    font-weight:400;
+    font-size:14px;
+
+}
+.items-topo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid #EDEDED;
+    border-top:1px solid #EDEDED;
+    height: 64px;
+    padding: 10px 0px;
+    flex-wrap: nowrap;
+}
+.menu-hamburger{
+    border-bottom:4px solid rgb(0, 0, 0);
+    width:30px;
+    position: relative;
+    margin-left: 16px;
+    margin-top:10px;   
+    cursor: pointer;
+    
+    
+}
+.menu-hamburger::after{
+    display: block;
+    align-items: center;
+    width:100%;
+    transform: rotate(180deg);
+    content: "";
+    border: 2px solid rgb(0, 0, 0);
+    position: relative;
+   bottom:4px;
+   transition: .3s;
+   
+    
+    
+}
+.menu-hamburger::before{
+    content: "";
+    border: 2px solid rgb(0, 0, 0);
+    display: block;
+    width: 30px;
+    transform: rotate(180deg);
+    position: relative;
+    top:-8px;
+    transition:.3s;
+    
+   
+    
+}
+.menu-hamburger:hover{
+    border:none;
+}
+.menu-hamburger::after:hover{
+    transform: rotate(-180deg);
+}
